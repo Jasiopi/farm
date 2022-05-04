@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Farma</title>
+<meta name="description" content="gra o farmie"/>
+<meta name="keywords" content="gra"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="grafika.css" type="text/css"/>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+	<div id="conteiner">
+		<div id="zagroda">
+			<div class="zwierze">królik<div id="królik">0</div></div>
+			<div class="zwierze">owca<div id="owca">0</div></div>
+			<div class="zwierze">świnia<div id="świnia">0</div></div>
+			<div class="zwierze">krowa<div id="krowa">0</div></div>
+			<div class="zwierze">koń<div id="koń">0</div></div>
+			<div class="obronca">pies<div id="pies">0</div></div>
+			<div class="obronca"> duzy pies<div id="duzy_pies">0</div></div>
+		</div>
+		
+		
+		
+		<div id="wymiany">
+			<input class="przycisk_wymiany" type="button" value="6 królik na 1 owca" onclick="zamian_królików_owce()">
+			<input class="przycisk_wymiany" type="button" value="owca na 6 królik" onclick="zamian_owce_króliki()">
+			<input class="przycisk_wymiany" type="button" value="3 owce na świnie" onclick="zamian_owce_świnie()">
+			<input class="przycisk_wymiany" type="button" value="świnia na 3 owce" onclick="zamian_świnie_owce()">
+			<input class="przycisk_wymiany" type="button" value="2 świnie na krowę" onclick="zamian_świnie_krowa()">
+			<input class="przycisk_wymiany" type="button" value="krowę na 2 świnie" onclick="zamian_krowa_świnie()">
+			<input class="przycisk_wymiany" type="button" value="2 krowy na konia" onclick="zamian_krowa_konia()">
+			<input class="przycisk_wymiany" type="button" value="konia na 2 krowy" onclick="zamian_konia_krowa()">
+			<input class="przycisk_obronca" type="button" value="owca na psa" onclick="zamian_owcy_psa()">
+			<input class="przycisk_obronca" type="button" value="krowa na dozego psa" onclick="zamian_krowy_duzy_pies()">
+		</div>
+		
+		<div id="los">
+			<input class="przycisk_wymiany" type="button" value="kości" onclick="rzut_kosci(liczba_królików)">
+			<p id="kość_1"></p>
+			<p id="kość_2"></p>
+		</div>
+		
+	</div>
+</body>
